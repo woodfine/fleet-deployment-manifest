@@ -1,28 +1,59 @@
-<div align="center">
-
-# Woodfine Fleet Manifest | Manifiesto de Flota Woodfine
-### *Operational Deployment & Fleet Orchestration*
-**Powered by Sovereign Operating Systems**
-
-</div>
+# PointSav Monorepo
+### *Engineering & Source Code for Sovereign Digital Systems*
 
 ---
 
-## **🏢 Corporate Mandate**
-Woodfine Management Corp. serves as the operating arm for **Woodfine Capital Projects Inc.**. Our mission is the secure procurement and management of real property assets through **Sovereign Computing**. [cite: 297, 298]
+## 🏛️ Development Matrix (Six-Tier Taxonomy)
+This repository contains the proprietary source code, Rust crates, and seL4 foundation modules engineered by **PointSav Digital Systems AG**. It is strictly a software development and compilation environment.
 
-### **⚖️ Operational Pillars**
-* **Perpetual Equity**: Long-term value creation over short-term liquidity. [cite: 302]
-* **Risk Management**: Strict adherence to a 1.2 Interest Coverage Ratio. [cite: 303]
-* **Sovereignty**: All data is secured on PointSav Totebox nodes. [cite: 303]
+*(Note: Master design tokens and visual resources are maintained in the separate `resource-design-system` repository).*
 
-## **📊 Deployment Matrix**
-| Layer | Component | OS Variant | Trust Model |
-| :--- | :--- | :--- | :--- |
-| **1. Infrastructure** | `fleet-infrastructure-*` | `os-infrastructure` | **Metal**: Trusted & Zero-Trust Nodes. [cite: 363] |
-| **2. Platform** | `cluster-totebox-*` | `os-totebox` | **Vault**: Isolated Data Containers. [cite: 363] |
-| **3. Delivery** | `node-console-*` | `os-console` | **Terminal**: Bare-Metal User Interface. [cite: 363] |
-| **4. Gateway** | `route-network-admin` | `os-network-admin` | **Authority**: Aggregation & Command. [cite: 363] |
+### **Tier 6: System (Foundation)**
+* `system-substrate`: Core hardware abstraction layer (HAL) source.
+* `system-substrate-broadcom`: Driver logic for Broadcom hardware.
+* `system-substrate-wifi`: Modular wireless networking codebase.
+* `system-security`: The Capability-Based Manager (CBM) in no_std Rust.
+* `system-core`: Core kernel-space primitives and the Rust no_std hardware manager.
+* `system-interface`: Internal system-call abstractions.
+
+### **Tier 5: Service (Logic)**
+* `service-content`: Asset & Knowledge synthesis source code.
+* `service-people`: Personnel signal distillation logic.
+* `service-email`: Sovereign Email Bridge (Maildir) service codebase.
+
+### **Tier 4: OS (Engine)**
+* `os-infrastructure`: Source code for the lightweight hypervisor module.
+* `os-totebox`: The capability-aware micro-kernel source.
+* `os-console`: Type II hosted window manager and terminal codebase.
+* `os-network-admin`: Source code for the network routing engine.
+* `os-interface`: Common UI framework for PointSav operating systems.
+* `os-privategit`: Sovereign source control engine (Foundry core).
+* `os-mediakit`: Specialized institutional media handling source.
+* `os-workplace`: Type I bare-metal OS logic.
+
+### **Tier 3: Moonshot (Sovereign R&D)**
+* `moonshot-kernel`: Project Vector (Formal Rust Verification) development.
+* `moonshot-gpu`: Project X-Ray (Native Sovereign Drivers) development.
+* `moonshot-database`: PSDB (Capability-aware deterministic storage).
+* `moonshot-index`: Deterministic indexing engine codebase.
+* `moonshot-protocol`: Verified message standard development.
+* `moonshot-hypervisor`: Proprietary Rust VMM development.
+* `moonshot-toolkit`: Rust-only toolchain development.
+
+### **Tier 1: App (Delivery Interfaces)**
+* `app-privategit-source-control`: Web interface source for the sovereign Foundry.
+* `app-privategit-design-system`: Delivery interface for design system distribution.
+* `app-mediakit-knowledge`: Front-end source for the institutional knowledge hub.
+* `app-mediakit-distributions`: Interface for secure institutional media distribution.
+* `app-mediakit-marketing`: Interface for public-facing market logic.
+* `app-totebox-corporate`: Specialized vault interface for Woodfine corporate management.
+* `app-totebox-real-property`: Specialized vault interface for Woodfine real property assets.
+
+### **Tier 0: Vendor (Foreign Dependencies)**
+* `vendor-sel4-kernel`: The legacy C-language kernel (Targeted by `moonshot-kernel`).
+* `vendor-gpu-drivers`: Closed-source hardware firmware (Targeted by `moonshot-gpu`).
+* `vendor-azure-auth`: Microsoft authentication dependencies.
+* `vendor-microsoft-graph`: Microsoft 365 Exchange API endpoints.
 
 ---
-*© 2026 Woodfine Management Corp. Orchestrated via PointSav.* [cite: 370]
+*© 2026 PointSav Digital Systems AG. All code strictly governed by the Sovereign Data Foundation.*
