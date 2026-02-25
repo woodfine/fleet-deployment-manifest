@@ -1,23 +1,22 @@
-# Woodfine Fleet Manifest | Manifiesto de Flota Woodfine
-### *Operational Deployment & Fleet Orchestration*
+# Woodfine Management Corp: Fleet Deployment Manifest
 
----
+Woodfine Management Corp. procures and manages real property assets. This repository manages the configuration for all physical and virtual hardware nodes in the Woodfine network.
 
-## 🏢 Corporate Mandate
-Woodfine Management Corp. serves as the operating arm for **Woodfine Capital Projects Inc.**. Our mission is the secure procurement and management of real property assets through **Sovereign Computing**. [cite: 297, 298]
+## Operational Constraints
+1. **Equity Generation:** Prioritize long-term value over short-term liquidity.
+2. **Financial Risk:** Maintain a strict 1.2 Interest Coverage Ratio.
+3. **Data Sovereignty:** All data is secured exclusively on PointSav Totebox nodes.
 
-### ⚖️ Operational Pillars
-* **Perpetual Equity**: Long-term value creation over short-term liquidity. [cite: 302]
-* **Risk Management**: Strict adherence to a 1.2 Interest Coverage Ratio. [cite: 303]
-* **Sovereignty**: All data is secured on PointSav Totebox nodes. [cite: 303]
+## Hardware & Deployment Matrix
 
-## 📊 Deployment Matrix
-| Layer | Component | OS Variant | Trust Model |
+All systems are built on the 4-Layer Sovereign Stack.
+
+| Layer | Component Prefix | Operating System | Trust Authorization |
 | :--- | :--- | :--- | :--- |
-| **1. Infrastructure** | fleet-infrastructure-* | os-infrastructure | **Metal**: Trusted & Zero-Trust Nodes.  |
-| **2. Platform** | cluster-totebox-* | os-totebox | **Vault**: Isolated Data Containers.  |
-| **3. Delivery** | node-workplace | os-workplace | **Terminal**: Bare-Metal User Interface.  |
-| **4. Gateway** | gateway-interface-command | os-interface | **Authority**: Aggregation & Command.  |
+| **1. Infrastructure** | `fleet-infrastructure-*` | `os-infrastructure` | **Metal**: Physical servers providing compute power. |
+| **2. Platform** | `cluster-totebox-*` | `os-totebox` | **Vault**: Isolated data storage containers. |
+| **3. Delivery** | `node-console-*` | `os-console` | **Terminal**: Bare-metal interface for users. |
+| **4. Gateway** | `route-network-admin` | `os-network-admin` | **Authority**: Network aggregation and routing commands. |
 
 ---
-*© 2026 Woodfine Management Corp. Orchestrated via PointSav.* [cite: 370]
+*© 2026 Woodfine Management Corp. Orchestrated via PointSav.*
